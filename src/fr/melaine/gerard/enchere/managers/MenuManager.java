@@ -1,6 +1,5 @@
-package fr.melaine.gerard.enchere.utils;
+package fr.melaine.gerard.enchere.managers;
 
-import fr.melaine.gerard.enchere.entities.Enchere;
 
 import java.util.Scanner;
 
@@ -42,7 +41,7 @@ public class MenuManager {
                 EnchereManager.displayItemsInEnchere();
                 break;
             case 5:
-                System.out.println("Lancement d'une enchère");
+                EnchereManager.startEnchere();
                 break;
             case 6:
                 System.out.println("Au revoir !");

@@ -1,8 +1,6 @@
 package fr.melaine.gerard.enchere;
 
-import fr.melaine.gerard.enchere.utils.MenuManager;
-
-import java.util.Scanner;
+import fr.melaine.gerard.enchere.managers.MenuManager;
 
 public class VenteEnchere {
 

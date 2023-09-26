@@ -1,16 +1,10 @@
 package fr.melaine.gerard.enchere.entities;
 
 public class User {
-    private final int id;
     private final String name;
 
-    public User(int id, String name) {
-        this.id = id;
+    public User(String name) {
         this.name = name;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {

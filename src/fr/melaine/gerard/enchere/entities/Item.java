@@ -6,6 +6,9 @@ public class Item {
     private final double startingPrice;
     private double currentPrice;
 
+    private User finalBuyer;
+    private User currentBuyer;
+
 
     public Item(String name, double poids, double startingPrice) {
         this.name = name;
@@ -31,12 +34,28 @@ public class Item {
         return currentPrice;
     }
 
+    public User getCurrentBuyer() {
+        return currentBuyer;
+    }
+
     public void setCurrentPrice(double currentPrice) {
         this.currentPrice = currentPrice;
     }
 
+    public User getFinalBuyer() {
+        return finalBuyer;
+    }
+
+    public void setFinalBuyer(User finalBuyer) {
+        this.finalBuyer = finalBuyer;
+    }
+
     @Override
     public String toString() {
-        return "Produit %s de poids %f kg avec un prix de départ de %f € et un prix actuel de %f €".formatted(name, poids, startingPrice, currentPrice);
+        return "Produit %s de poids %f kg avec un prix de départ de %f € et un prix actuel de %f €".formatted(getName(), getPoids(), getStartingPrice(), getCurrentPrice());
+    }
+
+    public void setCurrentBuyer(User user) {
+        this.currentBuyer = user;
     }
 }

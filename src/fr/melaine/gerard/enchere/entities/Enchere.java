@@ -26,6 +26,14 @@ public class Enchere {
         return name;
     }
 
+    public void addUser(User user) {
+        users.add(user);
+    }
+
+    public void addItem(Item item) {
+        items.add(item);
+    }
+
     @Override
     public String toString() {
         return "Enchère %s avec %d produits et %d utilisateurs".formatted(name, items.size(), users.size());
